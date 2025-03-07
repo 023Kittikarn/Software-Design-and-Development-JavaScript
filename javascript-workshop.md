@@ -1325,8 +1325,56 @@ checkPassword("short"); ]
 
 ### บันทึกผลการทดลอง 3.2.3
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจองห้องพัก</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        label { display: block; margin-top: 10px; }
+        input, select, button { margin: 5px 0; padding: 8px; width: 100%; max-width: 400px; }
+    </style>
+</head>
+<body>
+
+    <h2>ระบบจองห้องพัก</h2>
+
+    <form id="bookingForm">
+        <label>ชื่อผู้จอง:</label>
+        <input type="text" id="fullname" required>
+
+        <label>ประเภทห้อง:</label>
+        <select id="roomtype">
+            <option value="standard">Standard (สูงสุด 2 ท่าน)</option>
+            <option value="deluxe">Deluxe (สูงสุด 3 ท่าน)</option>
+            <option value="suite">Suite (สูงสุด 4 ท่าน)</option>
+        </select>
+
+        <label>วันที่เช็คอิน:</label>
+        <input type="date" id="checkin" required>
+
+        <label>วันที่เช็คเอาท์:</label>
+        <input type="date" id="checkout" required>
+
+        <label>จำนวนผู้เข้าพัก:</label>
+        <input type="number" id="guests" min="1" max="2" required>
+
+        <label>เบอร์โทรศัพท์:</label>
+        <input type="text" id="phone" required>
+
+        <button type="submit">จองห้องพัก</button>
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
+![image](https://github.com/user-attachments/assets/6a17b581-abc9-4517-87d9-f3a3238fa728)
+
 [รูปผลการทดลองที่ 3.2.3]
 
 
