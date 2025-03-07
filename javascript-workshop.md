@@ -278,8 +278,40 @@ number /= 2;          // เท่ากับ number = number / 2
 
 ### บันทึกผลการทดลอง 2.2
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การคำนวณพื้นฐาน</title>
+    <script src="script.js" defer></script> <!-- เชื่อม JavaScript -->
+</head>
+<body>
+    <h2>คำนวณคะแนนเฉลี่ย</h2>
+    <label>คะแนนวิชาที่ 1:</label>
+    <input type="number" id="score1"><br>
+    <label>คะแนนวิชาที่ 2:</label>
+    <input type="number" id="score2"><br>
+    <label>คะแนนวิชาที่ 3:</label>
+    <input type="number" id="score3"><br>
+    <button id="btnCalculateAverage">คำนวณคะแนนเฉลี่ย</button>
+    <p id="averageOutput"></p>
+
+    <hr>
+
+    <h2>คำนวณราคาสินค้ารวม VAT 7%</h2>
+    <label>ชื่อสินค้า:</label>
+    <input type="text" id="productName"><br>
+    <label>ราคาสินค้า:</label>
+    <input type="number" id="productPrice"><br>
+    <button id="btnCalculateVAT">คำนวณราคารวม VAT</button>
+    <p id="vatOutput"></p>
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
+![image](https://github.com/user-attachments/assets/67dcb153-5684-42a1-88ea-1e5266e24325)
+
 [รูปผลการทดลองที่ 2.2]
 
 ### 2.3 การควบคุมการทำงาน
